@@ -1,0 +1,98 @@
+.testimonials {
+  background: var(--bg-white);
+}
+
+.testimonials-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: clamp(50px, 6vw, 80px);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: clamp(16px, 2.5vw, 24px);
+}
+
+.testimonial-card {
+  background: var(--bg-white);
+  padding: clamp(24px, 3vw, 32px);
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-md);
+}
+
+.testimonial-quote {
+  font-size: clamp(15px, 2vw, 16px);
+  line-height: 1.6;
+  color: var(--primary-color);
+  margin-bottom: clamp(20px, 2.5vw, 24px);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.testimonial-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: clamp(16px, 2vw, 20px);
+  border-top: 1px solid var(--border-color);
+}
+
+.author-name {
+  font-size: clamp(14px, 1.8vw, 16px);
+  font-weight: 600;
+  color: var(--primary-color);
+  letter-spacing: 0;
+}
+
+.author-badge {
+  font-size: clamp(11px, 1.5vw, 12px);
+  font-weight: 500;
+  color: var(--accent-orange);
+  background: var(--accent-soft);
+  padding: 4px 10px;
+  border-radius: 4px;
+  letter-spacing: 0;
+}
+
+@media (max-width: 1024px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(14px, 2vw, 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-header {
+    margin-bottom: clamp(40px, 5vw, 60px);
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: clamp(12px, 1.5vw, 16px);
+  }
+  .testimonial-card {
+    padding: clamp(20px, 2.5vw, 24px);
+  }
+  .testimonial-quote {
+    font-size: clamp(14px, 1.8vw, 15px);
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-card {
+    padding: clamp(18px, 2vw, 20px);
+  }
+}

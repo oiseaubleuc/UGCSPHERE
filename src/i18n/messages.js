@@ -1,0 +1,156 @@
+export const messages = {
+  en: {
+    nav: {
+      process: 'Process',
+      work: 'Our Work',
+      pricing: 'Pricing',
+      ugcExplained: 'UGC Explained',
+      contact: 'Contact Us',
+    },
+    hero: {
+      badge: '',
+      title: 'Videos that work harder',
+      subtitle: 'Sphere Creators',
+      description: 'People trust people, that\'s why UGC outperforms classic ads. Sphere Creators delivers creator-made content tailored to your brand and optimized for social platforms and campaigns. Authentic, on-brand, and effective.',
+      ctaPrimary: 'View pricing',
+      ctaSecondary: 'What is UGC?',
+      statLabel: 'Happy customers',
+    },
+    work: {
+      title: 'Explore our UGC content and creative testing projects',
+    },
+    services: {
+      title: 'Our UGC content services for maximum social media impact',
+    },
+    features: {
+      title: 'Key features of our UGC content and creative testing process',
+    },
+    testimonials: {
+      title: 'What our premium clients are saying about UGCSPHERE',
+    },
+    pricing: {
+      title: 'UGCSPHERE Packages',
+      subtitle: 'Choose the package that fits your growth stage',
+      cta: 'Get started',
+      viewDetails: 'View full details',
+      hideDetails: 'Hide details',
+    },
+    process: {
+      title: 'How our UGC content and creative testing service works for you',
+    },
+    contact: {
+      title: 'Contact UGCSPHERE for your next viral campaign',
+      note: 'For urgent inquiries or custom requests, feel free to give us a call!',
+      name: 'Full Name',
+      email: 'Email Address',
+      service: 'Service',
+      message: 'Message',
+      submit: 'Submit your request',
+      placeholders: {
+        name: 'Enter your full name',
+        email: 'Enter your email address',
+        message: 'Tell us about your UGC project...',
+      },
+      serviceOptions: {
+        select: 'Select…',
+        instagram: 'Instagram Reels',
+        shorts: 'YouTube Shorts',
+        long: 'Long-form Videos',
+      },
+      emailLabel: 'Email:',
+      phoneLabel: 'Phone:',
+      locationLabel: 'Location:',
+    },
+    faq: {
+      title: 'Frequently asked questions about UGCSPHERE',
+      subtitle: 'Have a question about UGC or creative testing? Let\'s discuss it now!',
+      cta: 'Book a free strategy call',
+    },
+    footer: {
+      quickLinks: 'Quick Links',
+      contact: 'Contact',
+      follow: 'Follow us',
+      about: 'About us',
+      howItWorks: 'How it works',
+      rights: 'All rights reserved.',
+      description: 'UGC content and creative testing to boost your social media ROI.',
+    },
+  },
+  nl: {
+    nav: {
+      process: 'Process',
+      work: 'Our Work',
+      pricing: 'Pricing',
+      ugcExplained: 'UGC Explained',
+      contact: 'Contact Us',
+    },
+    hero: {
+      badge: '',
+      title: 'Videos that work harder',
+      subtitle: 'Sphere Creators',
+      description: 'Mensen vertrouwen mensen, daarom presteert UGC beter dan klassieke ads. Sphere Creators levert creator-made content op maat voor jouw merk en geoptimaliseerd voor social platforms en campagnes. Authentiek, on-brand en effectief.',
+      ctaPrimary: 'Bekijk pricing',
+      ctaSecondary: 'Wat is UGC?',
+      statLabel: 'Tevreden klanten',
+    },
+    work: {
+      title: 'Ontdek onze UGC content en creative testing projecten',
+    },
+    services: {
+      title: 'Onze UGC content diensten voor maximale social media impact',
+    },
+    features: {
+      title: 'Belangrijkste onderdelen van ons UGC content en creative testing proces',
+    },
+    testimonials: {
+      title: 'Wat onze premium klanten zeggen over UGCSPHERE',
+    },
+    pricing: {
+      title: 'UGCSPHERE Pakketten',
+      subtitle: 'Kies het pakket dat past bij jouw groeifase',
+      cta: 'Start nu',
+      viewDetails: 'Bekijk alle details',
+      hideDetails: 'Verberg details',
+    },
+    process: {
+      title: 'Hoe onze UGC content en creative testing service voor jou werkt',
+    },
+    contact: {
+      title: 'Contacteer UGCSPHERE voor je volgende virale campagne',
+      note: 'Voor dringende vragen of speciale verzoeken, bel ons gerust!',
+      name: 'Volledige naam',
+      email: 'E-mailadres',
+      service: 'Dienst',
+      message: 'Bericht',
+      submit: 'Verstuur je aanvraag',
+      placeholders: {
+        name: 'Voer je volledige naam in',
+        email: 'Voer je e-mailadres in',
+        message: 'Vertel ons over je UGC project...',
+      },
+      serviceOptions: {
+        select: 'Selecteer…',
+        instagram: 'Instagram Reels',
+        shorts: 'YouTube Shorts',
+        long: 'Lange video\'s',
+      },
+      emailLabel: 'E-mail:',
+      phoneLabel: 'Telefoon:',
+      locationLabel: 'Locatie:',
+    },
+    faq: {
+      title: 'Veelgestelde vragen over UGCSPHERE',
+      subtitle: 'Heb je een vraag over UGC of creative testing? Laten we het nu bespreken!',
+      cta: 'Boek een gratis strategiegesprek',
+    },
+    footer: {
+      quickLinks: 'Snelkoppelingen',
+      contact: 'Contact',
+      follow: 'Follow us',
+      about: 'Over ons',
+      howItWorks: 'Hoe werkt het',
+      rights: 'Alle rechten voorbehouden.',
+      description: 'UGC content en creative testing om jouw social media ROI te verhogen.',
+    },
+  },
+}
