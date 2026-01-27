@@ -9,10 +9,10 @@ const Work = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const workItems = [
-    { id: 1, thumbnail: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=600&fit=crop', videoUrl: 'https://www.youtube.com/watch?v=example1' },
-    { id: 2, thumbnail: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=400&h=600&fit=crop', videoUrl: 'https://www.youtube.com/watch?v=example2' },
-    { id: 3, thumbnail: 'https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?w=400&h=600&fit=crop', videoUrl: 'https://www.youtube.com/watch?v=example3' },
-    { id: 4, thumbnail: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=600&fit=crop', videoUrl: 'https://www.youtube.com/watch?v=example4' },
+    { id: 1, thumbnail: '/images/ugc-creator-1.jpg', videoUrl: 'https://www.youtube.com/watch?v=example1' },
+    { id: 2, thumbnail: '/images/ugc-creator-2.jpg', videoUrl: 'https://www.youtube.com/watch?v=example2' },
+    { id: 3, thumbnail: '/images/ugc-creator-3.jpg', videoUrl: 'https://www.youtube.com/watch?v=example3' },
+    { id: 4, thumbnail: '/images/ugc-creator-4.jpg', videoUrl: 'https://www.youtube.com/watch?v=example4' },
   ]
 
   const nextSlide = () => {

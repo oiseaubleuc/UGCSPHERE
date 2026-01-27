@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { FiInstagram, FiTwitter, FiLinkedin, FiYoutube } from 'react-icons/fi'
 import { useI18n } from '../i18n/i18n.jsx'
-import logoImage from '../images/sphere_logo_white.png'
+import logoImage from '../images/sphere_logo_glow.png'
 import './Footer.css'
 
 const Footer = () => {
