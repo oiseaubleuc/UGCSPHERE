@@ -79,13 +79,16 @@
   .testimonials-header {
     margin-bottom: clamp(40px, 5vw, 60px);
   }
+
   .testimonials-grid {
     grid-template-columns: 1fr;
     gap: clamp(12px, 1.5vw, 16px);
   }
+
   .testimonial-card {
     padding: clamp(20px, 2.5vw, 24px);
   }
+
   .testimonial-quote {
     font-size: clamp(14px, 1.8vw, 15px);
   }

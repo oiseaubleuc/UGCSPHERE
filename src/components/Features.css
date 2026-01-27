@@ -77,10 +77,12 @@
   .features-header {
     margin-bottom: clamp(40px, 5vw, 60px);
   }
+
   .features-grid {
     grid-template-columns: 1fr;
     gap: clamp(12px, 1.5vw, 16px);
   }
+
   .feature-card {
     padding: clamp(20px, 2.5vw, 24px);
   }

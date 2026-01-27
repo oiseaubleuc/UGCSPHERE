@@ -154,12 +154,14 @@
   .contact-header {
     margin-bottom: clamp(40px, 5vw, 60px);
   }
+
   .contact-form {
     gap: clamp(16px, 2vw, 20px);
   }
 }
 
 @media (max-width: 480px) {
+
   .form-group input,
   .form-group select,
   .form-group textarea {

@@ -175,9 +175,11 @@
   .hero {
     padding-top: clamp(120px, 15vw, 160px);
   }
+
   .hero-container {
     gap: clamp(32px, 5vw, 60px);
   }
+
   .hero-video-container {
     border-radius: clamp(6px, 1vw, 12px);
   }
@@ -187,18 +189,22 @@
   .hero {
     padding-top: clamp(100px, 12vw, 140px);
   }
+
   .hero-container {
     gap: clamp(28px, 4vw, 48px);
     padding: 0 clamp(16px, 3vw, 24px);
   }
+
   .hero-video-container {
     border-radius: clamp(4px, 0.8vw, 8px);
   }
+
   .hero-buttons {
     flex-direction: column;
     width: 100%;
     gap: 12px;
   }
+
   .btn-primary,
   .btn-secondary {
     width: 100%;
@@ -210,6 +216,7 @@
   .hero {
     padding-top: clamp(80px, 10vw, 120px);
   }
+
   .hero-stats {
     margin-top: clamp(32px, 5vw, 60px);
     flex-direction: row;

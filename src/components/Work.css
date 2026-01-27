@@ -151,18 +151,22 @@
   .work-header {
     margin-bottom: clamp(40px, 5vw, 60px);
   }
+
   .work-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
   }
+
   .nav-arrow {
     width: 32px;
     height: 32px;
   }
+
   .nav-arrow svg {
     width: 16px;
     height: 16px;
   }
+
   .work-pagination {
     margin-top: clamp(24px, 3vw, 40px);
   }

@@ -77,10 +77,12 @@
   .services-header {
     margin-bottom: clamp(40px, 5vw, 60px);
   }
+
   .services-grid {
     grid-template-columns: 1fr;
     gap: clamp(12px, 1.5vw, 16px);
   }
+
   .service-card {
     padding: clamp(20px, 2.5vw, 24px);
   }
