@@ -68,7 +68,7 @@ export const siteConfig = {
     },
     creatorMode: {
       id: 'creatorMode',
-      sort: 2,
+      sort: 3,
       price: { amount: 2997, currency: 'EUR', period: 'month' },
       badge: { en: 'Most Popular', nl: 'Meest Populair' },
       tagline: {
@@ -134,7 +134,7 @@ export const siteConfig = {
     },
     warmingUp: {
       id: 'warmingUp',
-      sort: 3,
+      sort: 2,
       price: { amount: 1997, currency: 'EUR', period: 'month' },
       tagline: {
         en: 'Scale your UGC content production',

@@ -80,11 +80,12 @@ const Contact = () => {
                 value={formData.service}
                 onChange={handleChange}
                 required
+                aria-label={tk('contact.service')}
               >
                 <option value="">{tk('contact.serviceOptions.select')}</option>
-                <option value="instagram">{tk('contact.serviceOptions.instagram')}</option>
-                <option value="shorts">{tk('contact.serviceOptions.shorts')}</option>
-                <option value="long">{tk('contact.serviceOptions.long')}</option>
+                <option value="softLaunch">{tk('contact.serviceOptions.softLaunch')}</option>
+                <option value="warmingUp">{tk('contact.serviceOptions.warmingUp')}</option>
+                <option value="creatorMode">{tk('contact.serviceOptions.creatorMode')}</option>
               </select>
             </div>
             <div className="form-group">
@@ -121,7 +122,7 @@ const Contact = () => {
               </div>
               <div className="contact-item">
                 <strong>{tk('contact.locationLabel')}</strong>
-                <span>Amsterdam, Netherlands</span>
+                <span>Antwerp, Belgium</span>
               </div>
             </div>
           </motion.div>

@@ -6,6 +6,7 @@ export const messages = {
       pricing: 'Pricing',
       ugcExplained: 'UGC Explained',
       contact: 'Contact Us',
+      testimonials: 'Testimonials',
     },
     hero: {
       badge: '',
@@ -53,9 +54,9 @@ export const messages = {
       },
       serviceOptions: {
         select: 'Select…',
-        instagram: 'Instagram Reels',
-        shorts: 'YouTube Shorts',
-        long: 'Long-form Videos',
+        softLaunch: 'Soft Launch',
+        warmingUp: 'Warming Up',
+        creatorMode: 'Creator Mode',
       },
       emailLabel: 'Email:',
       phoneLabel: 'Phone:',
@@ -83,6 +84,7 @@ export const messages = {
       pricing: 'Pricing',
       ugcExplained: 'UGC Explained',
       contact: 'Contact Us',
+      testimonials: 'Testimonials',
     },
     hero: {
       badge: '',
@@ -130,9 +132,9 @@ export const messages = {
       },
       serviceOptions: {
         select: 'Selecteer…',
-        instagram: 'Instagram Reels',
-        shorts: 'YouTube Shorts',
-        long: 'Lange video\'s',
+        softLaunch: 'Soft Launch',
+        warmingUp: 'Warming Up',
+        creatorMode: 'Creator Mode',
       },
       emailLabel: 'E-mail:',
       phoneLabel: 'Telefoon:',

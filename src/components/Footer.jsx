@@ -72,11 +72,6 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#testimonials" onClick={(e) => { e.preventDefault(); scrollToSection('testimonials') }}>
-                  {tk('nav.testimonials')}
-                </a>
-              </li>
-              <li>
                 <a href="#faq" onClick={(e) => { e.preventDefault(); scrollToSection('faq') }}>
                   FAQ
                 </a>
@@ -92,7 +87,7 @@ const Footer = () => {
               <li>
                 <a href="tel:+31123456789">+31 12 345 6789</a>
               </li>
-              <li>Amsterdam, Netherlands</li>
+              <li>Antwerp, Belgium</li>
             </ul>
           </div>
         </div>

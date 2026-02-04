@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useI18n } from '../i18n/i18n.jsx'
-import logoImage from '../images/brand.png'
+import logoImage from '../images/logo_header_black.png'
 import './Header.css'
 
 const Header = () => {

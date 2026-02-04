@@ -34,10 +34,10 @@
 }
 
 .logo-image {
-  height: clamp(50px, 7vw, 70px);
+  height: clamp(80px, 12vw, 140px);
   width: auto;
   object-fit: contain;
-  max-width: 200px;
+  max-width: 400px;
 }
 
 .logo:hover {
@@ -131,7 +131,7 @@
   }
 
   .logo-image {
-    height: clamp(45px, 6vw, 60px);
+    height: clamp(70px, 10vw, 110px);
   }
 
   .mobile-menu-toggle {
@@ -188,7 +188,7 @@
   }
 
   .logo-image {
-    height: clamp(40px, 5vw, 55px);
+    height: clamp(65px, 9vw, 100px);
   }
 
   .lang-toggle {
@@ -200,7 +200,7 @@
 
 @media (max-width: 360px) {
   .logo-image {
-    height: clamp(35px, 4vw, 45px);
+    height: clamp(60px, 8vw, 90px);
   }
 
   .header-container {

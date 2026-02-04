@@ -38,16 +38,19 @@
 }
 
 .footer-logo {
-  margin-bottom: clamp(16px, 2vw, 20px);
+  margin-bottom: clamp(20px, 2.5vw, 24px);
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .footer-logo-image {
-  height: clamp(60px, 8vw, 90px);
+  height: clamp(80px, 12vw, 140px);
   width: auto;
   object-fit: contain;
-  max-width: 280px;
+  max-width: 400px;
   display: block;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
 }
 
 .footer-description {
