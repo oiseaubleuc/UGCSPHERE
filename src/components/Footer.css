@@ -45,10 +45,10 @@
 }
 
 .footer-logo-image {
-  height: clamp(80px, 12vw, 140px);
+  height: clamp(48px, 6vw, 70px);
   width: auto;
   object-fit: contain;
-  max-width: 400px;
+  max-width: 220px;
   display: block;
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
 }
@@ -228,6 +228,11 @@
   .footer-description {
     max-width: 100%;
   }
+
+  .footer-logo-image {
+    height: clamp(44px, 6vw, 58px);
+    max-width: 180px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -237,5 +242,10 @@
 
   .footer-content {
     gap: clamp(24px, 3vw, 32px);
+  }
+
+  .footer-logo-image {
+    height: clamp(40px, 5.5vw, 50px);
+    max-width: 160px;
   }
 }
