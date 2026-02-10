@@ -10,5 +10,5 @@
 [[headers]]
   for = "/*"
   [headers.values]
+    Content-Security-Policy = "frame-ancestors *"
     X-Frame-Options = "ALLOWALL"
-    Content-Security-Policy = "frame-ancestors 'self' https://*.framer.com https://framer.com"
