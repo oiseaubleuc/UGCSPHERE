@@ -35,7 +35,7 @@
   border-radius: clamp(8px, 1.5vw, 16px);
   overflow: hidden;
   box-shadow: var(--shadow-xl);
-  background: #000;
+  background: linear-gradient(145deg, #1a1a1a 0%, #0a0a0a 100%);
 }
 
 .hero-video {
@@ -46,6 +46,8 @@
   height: 100%;
   object-fit: cover;
   border: none;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .hero-content {

@@ -29,8 +29,9 @@ const Hero = () => {
               loop
               playsInline
               preload="auto"
+              src={`${import.meta.env.BASE_URL}videos/hero-video.mp4`}
             >
-              <source src="/videos/hero-video.mp4" type="video/mp4" />
+              <source src={`${import.meta.env.BASE_URL}videos/hero-video.mp4`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
