@@ -5,9 +5,9 @@ export const siteConfig = {
   },
   stripe: {
     paymentLinks: {
-      softLaunch: '',
-      creatorMode: '',
-      warmingUp: '',
+      softLaunch: 'https://buy.stripe.com/test_fZu28rcd65qIfer3zO9R600',
+      warmingUp: 'https://buy.stripe.com/test_fZu14n7WQ3iAean8U89R601',
+      creatorMode: 'https://buy.stripe.com/test_aFa8wP1ys06o7LZ6M09R602',
     },
   },
   offers: {

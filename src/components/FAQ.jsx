@@ -9,56 +9,22 @@ const FAQ = () => {
 
   const faqs = lang === 'nl'
     ? [
-      {
-        question: 'Welke services bieden jullie aan?',
-        answer: 'We leveren UGC content (scripts, creators, opname en montage), creative testing en optimalisatie afgestemd op jouw doelen.',
-      },
-      {
-        question: 'Hoe snel zien we resultaten?',
-        answer: 'Veel klanten zien binnen 2 weken al betere CTR/engagement. Grote groei komt meestal vanaf maand 2 door iteratie en testing.',
-      },
-      {
-        question: 'Bieden jullie revisies aan?',
-        answer: 'Ja. Het aantal revisies hangt af van het pakket. In elk pakket staat duidelijk hoeveel revisierondes inbegrepen zijn.',
-      },
-      {
-        question: 'Voor welke platformen maken jullie content?',
-        answer: 'We optimaliseren voor Instagram, TikTok, Facebook, YouTube (Shorts/long-form) en meer, inclusief formaten per kanaal.',
-      },
-      {
-        question: 'Kunnen we eigen footage aanleveren?',
-        answer: 'Zeker. Je kan eigen footage sturen, of wij leveren creators + raw footage. We kiezen de aanpak die het best converteert.',
-      },
-      {
-        question: 'Hoe starten we?',
-        answer: 'Kies een pakket, rond de betaling af, en we plannen direct de eerste kickoff. Daarna start productie volgens de planning.',
-      },
+      { question: 'Wat is UGC?', answer: 'UGC zijn korte video\'s of foto\'s die eruitzien alsof ze door echte mensen zijn gemaakt, niet door een grote productie.' },
+      { question: 'Wat krijg ik als ik bestel?', answer: 'Je krijgt kant-en-klare video\'s (en/of foto\'s), geleverd via een link, gemaakt voor socials en ads.' },
+      { question: 'Waar kan ik de content gebruiken?', answer: 'Op Instagram, TikTok en in betaalde ads op Meta en TikTok.' },
+      { question: 'Wie maakt de video\'s?', answer: 'Onze eigen Sphere Creators (mannen en vrouwen) uit verschillende niches. Geen willekeurige freelancers.' },
+      { question: 'Hoe werkt het?', answer: 'Kies een pakket, vul een korte vragenlijst in, wij maken en monteren, jij ontvangt je content.' },
+      { question: 'Kan ik een creator of stijl kiezen?', answer: 'Je kunt je voorkeursstijl en voorbeelden delen. Wij matchen de beste creator bij jouw merk.' },
+      { question: 'Kan ik om wijzigingen vragen?', answer: 'Ja. Kleine aanpassingen zijn inbegrepen afhankelijk van je pakket.' },
     ]
     : [
-      {
-        question: 'What services do you offer?',
-        answer: 'We deliver UGC content (scripts, creators, filming and editing), creative testing and optimization aligned with your goals.',
-      },
-      {
-        question: 'How quickly will we see results?',
-        answer: 'Most clients see improved CTR/engagement within the first 2 weeks. Significant growth typically happens by month 2 with iteration and testing.',
-      },
-      {
-        question: 'Do you offer revisions?',
-        answer: 'Yes. Revisions depend on the package. Each package clearly lists how many revision rounds are included.',
-      },
-      {
-        question: 'What platforms do you create content for?',
-        answer: 'We optimize for Instagram, TikTok, Facebook, YouTube (Shorts/long-form) and more, including formats per channel.',
-      },
-      {
-        question: 'Can we provide our own footage?',
-        answer: 'Absolutely. You can send your own footage, or we provide creators + raw footage. We choose the approach that converts best.',
-      },
-      {
-        question: 'How do we get started?',
-        answer: 'Choose a package, complete payment, and we schedule the first kickoff immediately. Then production starts according to the plan.',
-      },
+      { question: 'What is UGC?', answer: 'UGC is short videos or photos that look like they\'re made by real people, not a big production.' },
+      { question: 'What do I get when I order?', answer: 'You get ready-to-use videos (and/or photos), delivered via a link, made for socials and ads.' },
+      { question: 'Where can I use the content?', answer: 'On Instagram, TikTok, and in paid ads on Meta and TikTok.' },
+      { question: 'Who makes the videos?', answer: 'Our own Sphere Creators (men and women) from different niches. Not random freelancers.' },
+      { question: 'How does it work?', answer: 'Pick a package, fill in a short questionnaire, we create and edit, you receive your content.' },
+      { question: 'Can I choose a creator or style?', answer: 'You can share your preferred style and examples. We match the best creator for your brand.' },
+      { question: 'Can I ask for changes?', answer: 'Yes. Small edits are included depending on your package.' },
     ]
 
   const toggleFAQ = (index) => {

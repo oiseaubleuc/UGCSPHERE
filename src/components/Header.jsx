@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useI18n } from '../i18n/i18n.jsx'
 import logoLight from '../images/logo_header_black.png'
-import logoDark from '../images/sphere_logo_glow.png'
+import logoDark from '../images/sphere_logo_white.png'
 import './Header.css'
 
 const Header = () => {
@@ -48,6 +48,9 @@ const Header = () => {
           </a>
           <a href="#ugcExplained" onClick={(e) => { e.preventDefault(); scrollToSection('process') }}>
             {tk('nav.ugcExplained')}
+          </a>
+          <a href="#faq" onClick={(e) => { e.preventDefault(); scrollToSection('faq') }}>
+            FAQ
           </a>
           <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact') }}>
             {tk('nav.contact')}

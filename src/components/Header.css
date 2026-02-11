@@ -52,6 +52,7 @@
 
   .logo-image-dark {
     display: block;
+    filter: brightness(1) contrast(1.1) drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
   }
 }
 
