@@ -75,12 +75,13 @@
 }
 
 .hero-subtitle {
-  font-size: clamp(18px, 2.5vw, 24px);
+  font-size: clamp(28px, 4.5vw, 44px);
   font-weight: 600;
   color: var(--accent-orange);
-  margin-bottom: 16px;
+  margin-bottom: clamp(12px, 1.5vw, 20px);
   letter-spacing: -0.02em;
   text-align: center;
+  line-height: 1.2;
 }
 
 .hero-text {
