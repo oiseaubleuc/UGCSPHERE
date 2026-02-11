@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useI18n } from '../i18n/i18n.jsx'
-import logoImage from '../images/logo_header_black.png'
+import logoLight from '../images/logo_header_black.png'
+import logoDark from '../images/sphere_logo_glow.png'
 import './Header.css'
 
 const Header = () => {
@@ -32,7 +33,8 @@ const Header = () => {
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo" onClick={() => scrollToSection('hero')}>
-          <img src={logoImage} alt="Sphere Creators" className="logo-image" />
+          <img src={logoLight} alt="Sphere Creators" className="logo-image logo-image-light" />
+          <img src={logoDark} alt="Sphere Creators" className="logo-image logo-image-dark" />
         </div>
         <nav className={`nav ${mobileMenuOpen ? 'open' : ''}`}>
           <a href="#process" onClick={(e) => { e.preventDefault(); scrollToSection('process') }}>

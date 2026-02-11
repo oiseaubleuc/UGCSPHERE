@@ -31,6 +31,7 @@
   align-items: center;
   cursor: pointer;
   transition: opacity 0.3s ease;
+  position: relative;
 }
 
 .logo-image {
@@ -38,6 +39,20 @@
   width: auto;
   object-fit: contain;
   max-width: 220px;
+}
+
+.logo-image-dark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo-image-light {
+    display: none;
+  }
+
+  .logo-image-dark {
+    display: block;
+  }
 }
 
 .logo:hover {
