@@ -16,31 +16,10 @@ const Hero = () => {
     <section id="hero" className="hero">
       <div className="hero-container">
         <motion.div
-          className="hero-video-wrapper"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="hero-video-container">
-            <video
-              className="hero-video"
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="auto"
-              src={`${import.meta.env.BASE_URL}videos/hero-video.mp4`}
-            >
-              <source src={`${import.meta.env.BASE_URL}videos/hero-video.mp4`} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </motion.div>
-        <motion.div
           className="hero-content"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.6 }}
         >
           {tk('hero.badge') && <div className="hero-badge">{tk('hero.badge')}</div>}
           {tk('hero.subtitle') && <div className="hero-subtitle">{tk('hero.subtitle')}</div>}
@@ -67,6 +46,27 @@ const Hero = () => {
               <div className="stat-number">500+</div>
               <div className="stat-label">{tk('hero.statLabel')}</div>
             </div>
+          </div>
+        </motion.div>
+        <motion.div
+          className="hero-video-wrapper"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          <div className="hero-video-container">
+            <video
+              className="hero-video"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              src={`${import.meta.env.BASE_URL}videos/hero-video.mp4`}
+            >
+              <source src={`${import.meta.env.BASE_URL}videos/hero-video.mp4`} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </motion.div>
       </div>
