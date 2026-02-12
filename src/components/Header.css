@@ -39,10 +39,18 @@
   width: auto;
   object-fit: contain;
   max-width: 220px;
+  display: block;
+}
+
+.logo-image-light {
+  display: block;
 }
 
 .logo-image-dark {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -52,7 +60,6 @@
 
   .logo-image-dark {
     display: block;
-    filter: brightness(1) contrast(1.1) drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
   }
 }
 

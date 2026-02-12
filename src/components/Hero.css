@@ -75,13 +75,13 @@
 }
 
 .hero-subtitle {
-  font-size: clamp(28px, 4.5vw, 44px);
-  font-weight: 600;
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 700;
   color: var(--accent-orange);
   margin-bottom: clamp(12px, 1.5vw, 20px);
-  letter-spacing: -0.02em;
-  text-align: center;
-  line-height: 1.2;
+  letter-spacing: -0.04em;
+  text-align: left;
+  line-height: 1.1;
 }
 
 .hero-text {
@@ -90,13 +90,13 @@
 }
 
 .hero-title {
-  font-size: clamp(40px, 8vw, 80px);
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.04em;
+  font-size: clamp(28px, 4.5vw, 44px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
   margin-bottom: clamp(24px, 3vw, 40px);
   color: var(--primary-color);
-  text-align: center;
+  text-align: left;
 }
 
 .hero-description {

@@ -1,11 +1,13 @@
+import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { FiInstagram, FiTwitter, FiLinkedin, FiYoutube } from 'react-icons/fi'
+import { FiInstagram, FiTwitter, FiLinkedin, FiYoutube, FiX } from 'react-icons/fi'
 import { useI18n } from '../i18n/i18n.jsx'
 import logoImage from '../images/sphere_logo_glow.png'
 import './Footer.css'
 
 const Footer = () => {
   const { tk } = useI18n()
+  const [modal, setModal] = useState(null)
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id)
@@ -92,9 +94,48 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} {tk('footer.rights')}</p>
+          <p className="footer-copyright">&copy; {new Date().getFullYear()} {tk('footer.rights')}</p>
+          <div className="footer-legal">
+            <button type="button" className="footer-legal-link" onClick={() => setModal('privacy')}>
+              {tk('footer.privacyPolicy')}
+            </button>
+            <span className="footer-legal-sep"> · </span>
+            <button type="button" className="footer-legal-link" onClick={() => setModal('terms')}>
+              {tk('footer.termsOfUse')}
+            </button>
+          </div>
         </div>
       </div>
+
+      {modal && (
+        <div
+          className="footer-modal-overlay"
+          onClick={() => setModal(null)}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby={modal === 'privacy' ? 'modal-privacy-title' : 'modal-terms-title'}
+        >
+          <div className="footer-modal" onClick={(e) => e.stopPropagation()}>
+            <button type="button" className="footer-modal-close" onClick={() => setModal(null)} aria-label="Close">
+              <FiX />
+            </button>
+            {modal === 'privacy' && (
+              <>
+                <h2 id="modal-privacy-title" className="footer-modal-title">{tk('footer.privacyPolicy')}</h2>
+                <p>{tk('footer.privacy1')}</p>
+                <p>{tk('footer.privacy2')}</p>
+              </>
+            )}
+            {modal === 'terms' && (
+              <>
+                <h2 id="modal-terms-title" className="footer-modal-title">{tk('footer.termsOfUse')}</h2>
+                <p>{tk('footer.terms1')}</p>
+                <p>{tk('footer.terms2')}</p>
+              </>
+            )}
+          </div>
+        </div>
+      )}
     </footer>
   )
 }

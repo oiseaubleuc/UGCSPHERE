@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useI18n } from '../i18n/i18n.jsx'
 import logoLight from '../images/logo_header_black.png'
-import logoDark from '../images/sphere_logo_white.png'
+import logoDark from '../images/logo_white_dark.png'
 import './Header.css'
 
 const Header = () => {

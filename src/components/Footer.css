@@ -200,11 +200,128 @@
 .footer-bottom {
   padding-top: clamp(32px, 4vw, 40px);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(12px, 2vw, 20px);
   color: rgba(255, 255, 255, 0.5);
   font-size: clamp(13px, 1.7vw, 14px);
   font-weight: 400;
   letter-spacing: 0.02em;
+}
+
+.footer-copyright {
+  margin: 0;
+}
+
+.footer-legal {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.footer-legal-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer-legal-link:hover {
+  color: #ffffff;
+}
+
+.footer-legal-sep {
+  color: rgba(255, 255, 255, 0.35);
+  user-select: none;
+}
+
+/* Modal pop-ups */
+.footer-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(20px, 4vw, 40px);
+  animation: footerModalFadeIn 0.2s ease;
+}
+
+@keyframes footerModalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.footer-modal {
+  background: #ffffff;
+  color: #1a1a1a;
+  max-width: 560px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: clamp(24px, 4vw, 40px);
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  position: relative;
+  animation: footerModalSlideIn 0.25s ease;
+}
+
+@keyframes footerModalSlideIn {
+  from { opacity: 0; transform: scale(0.96) translateY(-10px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.footer-modal-close {
+  position: absolute;
+  top: clamp(16px, 2vw, 20px);
+  right: clamp(16px, 2vw, 20px);
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.footer-modal-close:hover {
+  background: rgba(0, 0, 0, 0.12);
+  color: #000;
+}
+
+.footer-modal-close svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-modal-title {
+  font-size: clamp(20px, 3vw, 24px);
+  font-weight: 700;
+  margin: 0 0 clamp(16px, 2vw, 24px);
+  padding-right: 48px;
+  color: #1a1a1a;
+}
+
+.footer-modal p {
+  font-size: clamp(14px, 1.8vw, 15px);
+  line-height: 1.65;
+  color: #444;
+  margin: 0 0 1em;
+}
+
+.footer-modal p:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 1024px) {
