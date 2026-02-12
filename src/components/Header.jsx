@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useI18n } from '../i18n/i18n.jsx'
 import logoLight from '../images/logo_header_black.png'
-import logoDark from '../images/logo_white_dark.png'
+import logoDark from '../images/wit.png'
 import './Header.css'
 
 const Header = () => {
@@ -16,6 +16,15 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => { document.body.style.overflow = '' }
+  }, [mobileMenuOpen])
 
   const toggleLanguage = () => {
     setLanguage(lang === 'en' ? 'nl' : 'en')
@@ -60,8 +69,11 @@ const Header = () => {
           {lang.toUpperCase()}
         </button>
         <button
-          className="mobile-menu-toggle"
+          type="button"
+          className={`mobile-menu-toggle ${mobileMenuOpen ? 'open' : ''}`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={mobileMenuOpen}
         >
           <span></span>
           <span></span>
