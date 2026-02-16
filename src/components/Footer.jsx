@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { FiInstagram, FiTwitter, FiLinkedin, FiYoutube, FiX } from 'react-icons/fi'
+import { FiX } from 'react-icons/fi'
 import { useI18n } from '../i18n/i18n.jsx'
 import logoImage from '../images/sphere_logo_glow.png'
 import './Footer.css'
@@ -25,20 +25,6 @@ const Footer = () => {
               <img src={logoImage} alt="Sphere Creators" className="footer-logo-image" />
             </div>
             <p className="footer-description">{tk('footer.description')}</p>
-            <div className="footer-social">
-              <a href="#" className="social-link" aria-label="Instagram">
-                <FiInstagram />
-              </a>
-              <a href="#" className="social-link" aria-label="Twitter">
-                <FiTwitter />
-              </a>
-              <a href="#" className="social-link" aria-label="LinkedIn">
-                <FiLinkedin />
-              </a>
-              <a href="#" className="social-link" aria-label="YouTube">
-                <FiYoutube />
-              </a>
-            </div>
           </div>
           <div className="footer-section">
             <h4 className="footer-title">{tk('footer.quickLinks')}</h4>
@@ -87,7 +73,7 @@ const Footer = () => {
                 <a href="mailto:info@spherecreators.com">info@spherecreators.com</a>
               </li>
               <li>
-                <a href="tel:+31123456789">+31 12 345 6789</a>
+                <a href="tel:+32468159762">+32 468 15 97 62</a>
               </li>
               <li>Antwerp, Belgium</li>
             </ul>

@@ -118,7 +118,7 @@ const Contact = () => {
               </div>
               <div className="contact-item">
                 <strong>{tk('contact.phoneLabel')}</strong>
-                <a href="tel:+31123456789">+31 12 345 6789</a>
+                <a href="tel:+32468159762">+32 468 15 97 62</a>
               </div>
               <div className="contact-item">
                 <strong>{tk('contact.locationLabel')}</strong>

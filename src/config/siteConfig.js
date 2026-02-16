@@ -13,7 +13,7 @@ export const siteConfig = {
   offers: {
     softLaunch: {
       id: 'softLaunch',
-      sort: 1,
+      sort: 3,
       price: { amount: 750, currency: 'EUR', period: 'month' },
       tagline: {
         en: 'Test UGC without risking your budget',
@@ -68,9 +68,8 @@ export const siteConfig = {
     },
     creatorMode: {
       id: 'creatorMode',
-      sort: 3,
+      sort: 1,
       price: { amount: 2997, currency: 'EUR', period: 'month' },
-      badge: { en: 'Most Popular', nl: 'Meest Populair' },
       tagline: {
         en: 'Become the brand that never runs out of creative',
         nl: 'Word het merk dat nooit zonder creativiteit komt te zitten',
@@ -136,6 +135,7 @@ export const siteConfig = {
       id: 'warmingUp',
       sort: 2,
       price: { amount: 1997, currency: 'EUR', period: 'month' },
+      badge: { en: 'Most Popular', nl: 'Meest Populair' },
       tagline: {
         en: 'Scale your UGC content production',
         nl: 'Schaal je UGC content productie',
