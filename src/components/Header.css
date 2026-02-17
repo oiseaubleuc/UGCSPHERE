@@ -226,8 +226,15 @@
   }
 }
 
-/* Mobile uniquement (téléphone / petit écran): hamburger, navbar cachée */
+/* Mobile: petit écran OU écran tactile (téléphone/tablette) → hamburger */
 @media (max-width: 900px) {
+  .header-container .lang-toggle {
+    display: none !important;
+  }
+}
+
+/* Téléphone/tablette en "mode desktop" (viewport 980px) : forcer hamburger via détection tactile */
+@media (pointer: coarse) and (max-width: 1024px) {
   .header-container .lang-toggle {
     display: none !important;
   }
@@ -369,19 +376,63 @@
   }
 }
 
-@media (min-width: 901px) {
+/* Cacher l’overlay sur desktop (souris) ; le garder sur tactile même si viewport large */
+@media (min-width: 1025px) {
+  .nav-overlay-portal {
+    display: none !important;
+  }
+}
+@media (min-width: 901px) and (pointer: fine) {
   .nav-overlay-portal {
     display: none !important;
   }
 }
 
-/* Mobile uniquement: overlay + hamburger (pas sur MacBook/desktop) */
+/* Écran tactile (téléphone/tablette) même si viewport rapporté large → hamburger */
+@media (pointer: coarse) and (max-width: 1024px) {
+  .header-container {
+    flex-wrap: nowrap;
+  }
+  .nav {
+    display: none !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: #ffffff;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 0;
+    padding-bottom: clamp(40px, 6vw, 60px);
+    z-index: 9997;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .nav.open {
+    display: flex !important;
+    z-index: 9999;
+    padding-top: env(safe-area-inset-top, 0);
+    background: #ffffff;
+  }
+  .nav.open ~ .mobile-menu-toggle {
+    z-index: 10000;
+  }
+  .mobile-menu-toggle {
+    display: flex !important;
+  }
+}
+
+/* Mobile (petit écran): overlay + hamburger */
 @media (max-width: 900px) {
   .header-container {
     flex-wrap: nowrap;
   }
 
-  /* Nav: not shown in header bar; fullscreen overlay only when .open (fallback / desktop resize) */
   .nav {
     display: none;
     position: fixed;
