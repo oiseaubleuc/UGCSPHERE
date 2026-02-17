@@ -147,8 +147,8 @@
   }
 }
 
-/* Mobile: hamburger discret, fluide, moderne */
-@media (max-width: 1280px) {
+/* Mobile: hamburger discret, fluide */
+@media (max-width: 900px) {
   .mobile-menu-toggle {
     background: transparent;
     border-radius: 12px;
@@ -210,8 +210,8 @@
   }
 }
 
-/* Mobile & tablet: dès 1280px on passe au hamburger (compat téléphones qui rapportent une largeur large) */
-@media (max-width: 1280px) {
+/* Tablet: ajustements padding/logo sans changer la navbar */
+@media (max-width: 1024px) {
   .header-container {
     padding: clamp(14px, 2vw, 20px) clamp(18px, 3vw, 32px);
   }
@@ -224,7 +224,10 @@
   .nav {
     gap: clamp(16px, 2.5vw, 28px);
   }
+}
 
+/* Mobile uniquement (téléphone / petit écran): hamburger, navbar cachée */
+@media (max-width: 900px) {
   .header-container .lang-toggle {
     display: none !important;
   }
@@ -366,14 +369,14 @@
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 901px) {
   .nav-overlay-portal {
     display: none !important;
   }
 }
 
-/* Tablet & mobile: overlay menu + hamburger visible */
-@media (max-width: 1280px) {
+/* Mobile uniquement: overlay + hamburger (pas sur MacBook/desktop) */
+@media (max-width: 900px) {
   .header-container {
     flex-wrap: nowrap;
   }
