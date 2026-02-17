@@ -15,9 +15,10 @@
 
 .process-steps {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: clamp(24px, 3vw, 32px);
   position: relative;
+  max-width: 100%;
 }
 
 .process-step {
@@ -68,6 +69,7 @@
   }
 }
 
+/* Mobile: 1 colonne, pas de scroll horizontal */
 @media (max-width: 768px) {
   .process-header {
     margin-bottom: clamp(40px, 5vw, 60px);
@@ -76,6 +78,11 @@
   .process-steps {
     grid-template-columns: 1fr;
     gap: clamp(32px, 4vw, 40px);
+    min-width: 0;
+  }
+
+  .process-step {
+    min-width: 0;
   }
 
   .step-number {

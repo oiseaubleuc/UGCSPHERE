@@ -25,6 +25,7 @@
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: clamp(20px, 2.5vw, 24px);
   align-items: start;
+  max-width: 100%;
 }
 
 .pricing-card {
@@ -33,6 +34,8 @@
   border-radius: 0;
   padding: clamp(36px, 4.5vw, 48px);
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   position: relative;
   transition: all 0.2s ease;
 }
@@ -251,16 +254,11 @@
   }
 }
 
-@media (max-width: 640px) {
-  .pricing-grid {
-    grid-template-columns: 1fr;
-    gap: clamp(16px, 2vw, 20px);
-  }
-}
-
+/* Mobile: 1 colonne pour éviter le scroll horizontal */
 @media (max-width: 768px) {
   .pricing-grid {
     grid-template-columns: 1fr;
+    gap: clamp(16px, 2vw, 20px);
   }
 
   .pricing-card {
