@@ -107,29 +107,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 6px;
-  background: none;
+  gap: 5px;
+  background: transparent;
   border: none;
   cursor: pointer;
-  padding: 12px;
+  padding: 14px;
   min-width: 48px;
   min-height: 48px;
   z-index: 9998;
   position: relative;
   -webkit-tap-highlight-color: transparent;
+  transition: background 0.3s ease, opacity 0.3s ease;
 }
 
 .mobile-menu-toggle span {
   width: 22px;
   height: 2px;
-  background: var(--primary-color);
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+  background: rgba(0, 0, 0, 0.6);
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.3s ease;
   border-radius: 1px;
   display: block;
 }
 
 .mobile-menu-toggle.open span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
 }
 
 .mobile-menu-toggle.open span:nth-child(2) {
@@ -137,12 +138,41 @@
 }
 
 .mobile-menu-toggle.open span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 @media (prefers-color-scheme: dark) {
   .mobile-menu-toggle span {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.7);
+  }
+}
+
+/* Mobile: hamburger discret, fluide, moderne */
+@media (max-width: 1280px) {
+  .mobile-menu-toggle {
+    background: transparent;
+    border-radius: 12px;
+    padding: 14px;
+  }
+  .mobile-menu-toggle:hover {
+    background: rgba(0, 0, 0, 0.04);
+  }
+  .mobile-menu-toggle:active {
+    background: rgba(0, 0, 0, 0.08);
+  }
+  .mobile-menu-toggle span {
+    background: rgba(0, 0, 0, 0.55);
+  }
+  @media (prefers-color-scheme: dark) {
+    .mobile-menu-toggle:hover {
+      background: rgba(255, 255, 255, 0.06);
+    }
+    .mobile-menu-toggle:active {
+      background: rgba(255, 255, 255, 0.12);
+    }
+    .mobile-menu-toggle span {
+      background: rgba(255, 255, 255, 0.65);
+    }
   }
 }
 
@@ -180,7 +210,8 @@
   }
 }
 
-@media (max-width: 1024px) {
+/* Mobile & tablet: dès 1280px on passe au hamburger (compat téléphones qui rapportent une largeur large) */
+@media (max-width: 1280px) {
   .header-container {
     padding: clamp(14px, 2vw, 20px) clamp(18px, 3vw, 32px);
   }
@@ -194,13 +225,12 @@
     gap: clamp(16px, 2.5vw, 28px);
   }
 
-  /* Mobile & tablet: hide lang in header (only in overlay when menu open) */
   .header-container .lang-toggle {
     display: none !important;
   }
 }
 
-/* Full-screen overlay rendered in body (portal) – style Apple: défilement parfait + animation */
+/* Overlay: animation fluide et moderne */
 @keyframes nav-overlay-in {
   from {
     opacity: 0;
@@ -236,7 +266,7 @@
   scroll-behavior: smooth;
   overscroll-behavior: contain;
   touch-action: pan-y;
-  animation: nav-overlay-in 0.25s ease-out;
+  animation: nav-overlay-in 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .nav-overlay-portal .nav-overlay-header {
@@ -336,14 +366,14 @@
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1281px) {
   .nav-overlay-portal {
     display: none !important;
   }
 }
 
 /* Tablet & mobile: overlay menu + hamburger visible */
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .header-container {
     flex-wrap: nowrap;
   }
@@ -538,6 +568,14 @@
     right: 56px;
     padding: 8px 10px;
     font-size: 12px;
+  }
+
+  /* Forcer le mode mobile sur téléphone (sécurité) */
+  .header .nav {
+    display: none !important;
+  }
+  .header .mobile-menu-toggle {
+    display: flex !important;
   }
 }
 
